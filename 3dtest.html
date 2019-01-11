@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang = "zh-CN">
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0"/>
+    <script src = "js/jquery.min.js"></script>
+    <title>3D</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+        }
+
+        .content {
+            display: block;
+            width: 100%;
+            height: 938px;
+            display: block;
+            margin: 0 auto;
+            position: relative;
+            /* overflow: hidden; */
+            background: url(./images/bg.jpg);
+            background-size: 100% 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        .father {
+            width: 200px;
+            height: 200px;
+            display: block;
+            margin: 0 auto;
+            margin-top: 300px;
+            transform-style: preserve-3d;
+            /*border: 1px solid #ffffff;*/
+            transform: rotateX(5deg);
+            transform: rotateX(-8deg) rotateY(0);
+            -webkit-transform: rotateX(-8deg) rotateY(0);
+            animation: father 150s linear infinite;
+            -webkit-animation: father 150s linear infinite;
+        }
+
+        .background {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            display: block;
+            left: 50%;
+            top: 100px;
+            transform-style: preserve-3d;
+            border: 1px solid #ffffff;
+            transform: rotateX(5deg);
+            transform: rotateX(-8deg) rotateY(0);
+            -webkit-transform: rotateX(-8deg) rotateY(0);
+            animation: father 150s linear infinite;
+            -webkit-animation: father 150s linear infinite;
+        }
+
+        .index {
+            width: 500%;
+            position: absolute;
+            left:-200%;
+            top: -200%;
+            animation: index 150s linear infinite  ;
+            -webkit-animation: index 150s linear infinite  ;
+        }
+
+        @keyframes father {
+            from {
+                transform: rotateX(-8deg) rotateY(0);
+                -webkit-transform: rotateX(-8deg) rotateY(0);
+            }
+            to {
+                transform: rotateX(-8deg) rotateY(360deg);
+                -webkit-transform: rotateX(-8deg) rotateY(360deg);
+            }
+
+        }
+
+        @-webkit-keyframes father {
+            from {
+                transform: rotateX( 8deg) rotateY(0);
+                -webkit-transform: rotateX( 8deg) rotateY(0);
+            }
+            to {
+                transform: rotateX( 8deg) rotateY(360deg);
+                -webkit-transform: rotateX( 8deg) rotateY(360deg);
+            }
+
+        }
+
+        @keyframes index {
+            from {
+                transform: rotateX( 8deg) rotateY(0);
+                -webkit-transform: rotateX(  8deg) rotateY(0);
+            }
+            to {
+                transform: rotateX( 8deg) rotateY(-360deg);
+                -webkit-transform: rotateX( 8deg) rotateY(-360deg);
+            }
+
+        }
+
+        @-webkit-keyframes index {
+            from {
+                transform: rotateX(-8deg) rotateY(0);
+                -webkit-transform: rotateX(-8deg) rotateY(0);
+            }
+            to {
+                transform: rotateX(-8deg) rotateY(-360deg);
+                -webkit-transform: rotateX(-8deg) rotateY(-360deg);
+            }
+
+        }
+
+
+
+        .son {
+            width: 80px;
+            height: 100px;
+            /*background: #41b883;*/
+            position: absolute;
+            left: 75px;
+            top: 150px;
+            border-radius: 100%;
+            background-image: url("./images/img.jpg");
+            background-size: 100% 100%;
+            box-shadow: 0px 0px 10px #e5e5e5;
+        }
+
+        .nameicon {
+            width: 100%;
+            position: absolute;
+            left: 0;
+            bottom: -30px;
+            color: #c9c9c9;
+            text-align: center;
+            font-size: 18px;
+        }
+
+    </style>
+</head>
+<body>
+<div class = "content">
+</div>
+    <div class = "father">
+
+        <!--<img src = "./images/index.jpg" class = "index" alt = "">-->
+
+        <div class = "son"></div>
+        <div class = "son"></div>
+        <div class = "son"></div>
+        <div class = "son"></div>
+        <div class = "son"></div>
+        <div class = "son"></div>
+        <div class = "son"></div>
+        <div class = "son"></div>
+        <div class = "son"></div>
+        <div class = "son"></div>
+        <div class = "son"></div>
+        <div class = "son"></div>
+        <div class = "son"></div>
+        <div class = "son"></div>
+        <div class = "son"></div>
+        <div class = "son"></div>
+        <div class = "son"></div>
+        <div class = "son"></div>
+        <div class = "son"></div>
+        <div class = "son"></div>
+        <div class = "son"></div>
+        <div class = "son"></div>
+        <div class = "son"></div>
+        <div class = "son"></div>
+        <div class = "son"></div>
+        <div class = "son"></div>
+        <div class = "son"></div>
+        <div class = "son"></div>
+        <div class = "son"></div>
+        <div class = "son"></div>
+        <div class = "son"></div>
+        <div class = "son"></div>
+        <div class = "son"></div>
+        <div class = "son"></div>
+        <div class = "son"></div>
+        <div class = "son"></div>
+        <div class = "son"></div>
+        <div class = "son"></div>
+        <div class = "son"></div>
+        <div class = "son"></div>
+        <div class = "son"></div>
+        <div class = "son"></div>
+        <div class = "son"></div>
+        <div class = "son"></div>
+        <div class = "son"></div>
+        <div class = "son"></div>
+        <div class = "son"></div>
+        <div class = "son"></div>
+        <div class = "son"></div>
+        <div class = "son"></div>
+        <div class = "son"></div>
+        <div class = "son"></div>
+        <div class = "son"></div>
+        <div class = "son"></div>
+        <div class = "son"></div>
+        <div class = "son"></div>
+        <div class = "son"></div>
+        <div class = "son"></div>
+        <div class = "son"></div>
+        <div class = "son"></div>
+        <div class = "son"></div>
+        <div class = "son"></div>
+        <div class = "son"></div>
+        <div class = "son"></div>
+        <div class = "son"></div>
+        <div class = "son"></div>
+        <div class = "son"></div>
+        <div class = "son"></div>
+        <div class = "son"></div>
+        <div class = "son"></div>
+        <div class = "son"></div>
+        <div class = "son"></div>
+        <div class = "son"></div>
+        <div class = "son"></div>
+        <div class = "son"></div>
+        <div class = "son"></div>
+        <div class = "son"></div>
+        <div class = "son"></div>
+        <div class = "son"></div>
+        <div class = "son"></div>
+        <div class = "son"></div>
+        <div class = "son"></div>
+        <div class = "son"></div>
+        <div class = "son"></div>
+        <div class = "son"></div>
+        <div class = "son"></div>
+        <div class = "son"></div>
+        <div class = "son"></div>
+
+    </div>
+</div>
+<script>
+    $(function(){
+        var icon = [
+            "Aatrox.png",
+            "Ahri.png",
+            "Akali.png",
+            "Alistar.png",
+            "Amumu.png",
+            "Anivia.png",
+            "Annie.png",
+            "Ashe.png",
+            "AurelionSol.png",
+            "Azir.png",
+            "Bard.png",
+            "Blitzcrank.png",
+            "Brand.png",
+            "Braum.png",
+            "Caitlyn.png",
+            "Camille.png",
+            "Cassiopeia.png",
+            "Chogath.png",
+            "Corki.png",
+            "Darius.png",
+            "Diana.png",
+            "Draven.png",
+            "DrMundo.png",
+            "Ekko.png",
+            "Elise.png",
+            "Evelynn.png",
+            "Ezreal.png",
+            "Fiddlesticks.png",
+            "Fiora.png",
+            "Fizz.png",
+            "Galio.png",
+            "Gangplank.png",
+            "Garen.png",
+            "Gnar.png",
+            "Gragas.png",
+            "Graves.png",
+            "Hecarim.png",
+            "Heimerdinger.png",
+            "Illaoi.png",
+            "Irelia.png",
+            "Ivern.png",
+            "Janna.png",
+            "JarvanIV.png",
+            "Jax.png",
+            "Jayce.png",
+            "Jhin.png",
+            "Jinx.png",
+            "Kaisa.png",
+            "Kalista.png",
+            "Karma.png",
+            "Karthus.png",
+            "Kassadin.png",
+            "Katarina.png",
+            "Kayle.png",
+            "Kayn.png",
+            "Kennen.png",
+            "Khazix.png",
+            "Kindred.png",
+            "Kled.png",
+            "KogMaw.png",
+            "Leblanc.png",
+            "LeeSin.png",
+            "Leona.png",
+            "Lissandra.png",
+            "Lucian.png",
+            "Lulu.png",
+            "Lux.png",
+            "Malphite.png",
+            "Malzahar.png",
+            "Maokai.png",
+            "MasterYi.png",
+            "MissFortune.png",
+            "MonkeyKing.png",
+            "Mordekaiser.png",
+            "Morgana.png",
+            "Nami.png",
+            "Nasus.png",
+            "Nautilus.png",
+            "Neeko.png",
+            "Nidalee.png",
+            "Nocturne.png",
+            "Nunu.png",
+            "Olaf.png",
+            "Orianna.png",
+            "Ornn.png",
+            "Pantheon.png",
+            "Poppy.png",
+            "Pyke.png",
+            "Quinn.png",
+            "Rakan.png",
+            "Rammus.png",
+            "RekSai.png",
+            "Renekton.png",
+            "Rengar.png",
+            "Riven.png",
+            "Rumble.png",
+            "Ryze.png",
+            "Sejuani.png",
+            "Shaco.png",
+            "Shen.png",
+            "Shyvana.png",
+            "Singed.png",
+            "Sion.png",
+            "Sivir.png",
+            "Skarner.png",
+            "Sona.png",
+            "Soraka.png",
+            "Swain.png",
+            "Syndra.png",
+            "TahmKench.png",
+            "Taliyah.png",
+            "Talon.png",
+            "Taric.png",
+            "Teemo.png",
+            "Thresh.png",
+            "Tristana.png",
+            "Trundle.png",
+            "Tryndamere.png",
+            "TwistedFate.png",
+            "Twitch.png",
+            "Udyr.png",
+            "Urgot.png",
+            "Varus.png",
+            "Vayne.png",
+            "Veigar.png",
+            "Velkoz.png",
+            "Vi.png",
+            "Viktor.png",
+            "Vladimir.png",
+            "Volibear.png",
+            "Warwick.png",
+            "Xayah.png",
+            "Xerath.png",
+            "XinZhao.png",
+            "Yasuo.png",
+            "Yorick.png",
+            "Zac.png",
+            "Zed.png",
+            "Ziggs.png",
+            "Zilean.png",
+            "zm-qrcode.jpg",
+            "Zoe.png",
+            "Zyra.png",
+        ]
+        console.log(icon.length)
+        $('.son').each(function(){
+            var index = $(this).index()
+            var ys = index % 36
+            var ys2 = index % 143
+            angle = ys * 10
+            console.log(angle);
+            $(this).css({
+                // "background-color" : colorRandom(Math.round(Math.random() * 900)),
+                "transform"        : "rotateY(" + angle + "deg) translateZ(662px)",
+                "top"              : (400 - index * 5) + "px",
+                "background-image" : "url(./images/" + icon[ys2],
+                " background-size" : "100% 100%"
+            })
+            var span = '<span class = "nameicon">' + icon[ys2].split('.')[0] + '</span>'
+            $(this).empty().append(span)
+
+        })
+    })
+
+    function colorRandom(i){
+        var r = 0,
+            g = 0,
+            b = 0;
+        i = i % 1530;
+        var k = Math.floor(i / 255);
+        i = i % 255;
+        switch(k){
+            case  0:
+                r = 0;
+                g = 255;
+                b = 255 - i;
+                // console.log("rgb(" + r + "," + g + "," + b + ")")
+                return "rgb(" + r + "," + g + "," + b + ")";
+                break;
+            case  1:
+                r = i;
+                g = 255;
+                b = 0;
+                // console.log("rgb(" + r + "," + g + "," + b + ")")
+                return "rgb(" + r + "," + g + "," + b + ")";
+                break;
+            case 2:
+                r = 255;
+                g = 255 - i;
+                b = 0;
+                // console.log("rgb(" + r + "," + g + "," + b + ")")
+                return "rgb(" + r + "," + g + "," + b + ")";
+                break;
+            case 3:
+                r = 255;
+                g = 0;
+                b = i;
+                // console.log("rgb(" + r + "," + g + "," + b + ")")
+                return "rgb(" + r + "," + g + "," + b + ")";
+                break;
+            case 4:
+                r = 255 - i;
+                g = 0;
+                b = 255;
+                // console.log("rgb(" + r + "," + g + "," + b + ")")
+                return "rgb(" + r + "," + g + "," + b + ")";
+                break;
+            case 5:
+                r = 0;
+                g = i;
+                b = 255;
+                // console.log("rgb(" + r + "," + g + "," + b + ")")
+                return "rgb(" + r + "," + g + "," + b + ")";
+                break;
+
+        }
+
+    }
+</script>
+</body>
+</html>
